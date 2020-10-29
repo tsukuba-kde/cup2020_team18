@@ -17,6 +17,9 @@ https://www.iwsec.org/pws/2020/cup20.html
 * 結果的に元データのレコードと一致しているレコードが数個作られるので、その値を少し摂動する（similarity_attack_defender.py）
 
 ## 使い方
+
+(事前にcategory_encoderをインストールしておく必要があります)
+
 1. 手元に匿名化前データ（originaldata.csv）があるとします。
 1. サンプルに含まれている擬似データ生成コードを実行し、擬似データファイルを作る。ここでは仮に出力されたデータファイルを pseudodata.csv とします。
 1. pseudodata.csvをutlity_adjuster.pyに適用します。ここでは結果をadjusted_pseudodata.csvに出力しています。
