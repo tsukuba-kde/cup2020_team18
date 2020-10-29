@@ -234,10 +234,10 @@ if __name__ == "__main__":
     for i in range(repetition):
         src_pair = select_replace_cooccurence_pair(coocc_diff)
         dst_pair = replace_pair_both_columns(src_pair, coocc_diff)
-        print(src_pair)
-        print(coocc_diff.at[src_pair[0],src_pair[1]])
-        print(dst_pair)
-        print(coocc_diff.at[dst_pair[0],dst_pair[1]])
+        #print(src_pair)
+        #print(coocc_diff.at[src_pair[0],src_pair[1]])
+        #print(dst_pair)
+        #print(coocc_diff.at[dst_pair[0],dst_pair[1]])
         if(coocc_diff.at[src_pair[0], src_pair[1]]<0):
             src_pair, dst_pair = swap_src_dst(src_pair, dst_pair)
         records = select_replace_records_both_columns(src_pair, dst_pair, coocc_diff, dfB_vector)
